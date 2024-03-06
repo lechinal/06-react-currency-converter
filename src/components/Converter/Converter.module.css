@@ -1,0 +1,35 @@
+.section {
+  box-shadow: 0 10px 20px 0 #b3bbc673;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  margin: 15px;
+}
+
+.title {
+  padding-top: 15px;
+}
+.converterBox {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultBox {
+  padding-top: 15px;
+}
+
+@keyframes spinAndScale {
+  0%,
+  100% {
+    transform: rotate(0) scale(1);
+  }
+  50% {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
+
+.section span {
+  display: inline-block;
+  animation: spinAndScale 2s ease-in-out infinite;
+}

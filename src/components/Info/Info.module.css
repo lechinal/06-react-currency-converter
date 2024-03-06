@@ -1,0 +1,142 @@
+.infoBox {
+  display: flex;
+  gap: 30px;
+
+  margin: 15px;
+}
+
+.detailsLeft,
+.currenciesRight {
+  flex: 1;
+  border: 1px solid #e0e1e5;
+  border-radius: 15px;
+  padding-bottom: 15px;
+
+  position: relative;
+}
+.detailsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btnOpenDetails,
+.btnCloseDetails,
+.btnOpenCurrencies,
+.btnCloseCurrencies,
+.btnOpenData,
+.btnCloseModal {
+  border: none;
+  background: none;
+  color: blue;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.btnOpenDetails,
+.btnOpenCurrencies,
+.btnOpenData {
+  animation: pulse 1s infinite;
+}
+
+.btnCloseDetails {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.btnCloseCurrencies {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px 5px 0 5px;
+}
+
+.textBox p {
+  transition: transform 0.3s ease;
+}
+
+.textBox p:hover {
+  transform: scale(0.9);
+  color: red;
+  font-style: bold;
+}
+
+.btnForMore {
+  border: none;
+  background: none;
+  color: blue;
+}
+
+.more {
+  font-style: italic;
+  font-weight: bold;
+  animation: wobble 1s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  15%,
+  45%,
+  75% {
+    transform: translateX(-10px);
+  }
+  30%,
+  60% {
+    transform: translateX(10px);
+  }
+}
+.more span {
+  color: green;
+}
+.currenciesText {
+  padding: 15px 5px 0 5px;
+  margin: 0 5px 0 5px;
+}
+.currenciesList {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #eee;
+  border-radius: 15px;
+  padding-bottom: 15px;
+}
+.moreInfo h4 {
+  border-bottom: 1px solid blue;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* .table th,
+.table td {
+  border: 1px solid #e0e1e5;
+} */

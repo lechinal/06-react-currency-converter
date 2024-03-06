@@ -1,0 +1,56 @@
+.historicalBox {
+  border: 1px solid #e0e1e5;
+  border-radius: 15px;
+
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.btnBox {
+  position: relative;
+}
+
+.btnCloseData {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.btnOpenData,
+.btnCloseData {
+  border: none;
+  background: none;
+}
+
+.btnSearchBox {
+  padding-bottom: 15px;
+}
+.firstDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.secondDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dateInput {
+  cursor: pointer;
+}
+
+.thirdDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.weekendText {
+  color: red; /* sau orice alt stil dorit pentru textul de weekend */
+}

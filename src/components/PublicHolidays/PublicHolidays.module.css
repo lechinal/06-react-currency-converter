@@ -1,0 +1,62 @@
+.publicHolidays {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  background-color: #eee8aa;
+  z-index: 1000;
+  overflow: auto;
+}
+
+.btnCloseModalBox {
+  position: relative;
+}
+.btnCloseModal {
+  border: none;
+  background: none;
+
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.hoursBox {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.holidaysBox {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+
+  margin: 15px;
+}
+
+.holidaysBox h3 {
+  color: blue;
+  align-self: flex-start;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
